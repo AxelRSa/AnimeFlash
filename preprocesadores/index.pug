@@ -2,14 +2,10 @@ include ./pug/IconArrow.pug
 include ./pug/main_items.pug
 include ./pug/hero_accountant.pug
 include ./pug/nav.pug
+include ./pug/head
 doctype html
 html(lang='en')
-	head
-		meta(charset='UTF-8')
-		meta(http-equiv='X-UA-Compatible' content='IE=edge')
-		meta(name='viewport' content='width=device-width, initial-scale=1.0')
-		title Anime-Flash
-		link(rel='stylesheet' href='style.css')
+	+head()
 	body
 		.page
 			.header
@@ -62,4 +58,3 @@ html(lang='en')
 								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
 								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
 								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
-
